@@ -1,0 +1,42 @@
+.container2 {
+  width: 100%;
+  height: 100%;
+  background: url(https://cdn.discordapp.com/attachments/1122285371749847140/1221132347773292764/TheWall.png?ex=6611771f&is=65ff021f&hm=daaf70ac4b8da9703f0282829d3526fc40802d0820896e5830868abd4a5dfab4&) repeat-y;
+  animation: scroll 180s linear infinite;
+  background-size: 100%;
+}
+
+.container2--fixed {
+  width: 100%;
+  max-width: 100%;
+}
+
+@keyframes scroll {
+  to {
+    background-position: 0 100000%;
+  }
+}
+
+
+
+
+.container3 {
+  background: url(https://cdn.discordapp.com/attachments/1122285371749847140/1221147027505676358/D62eGV3Mja1uAAAAAElFTkSuQmCC.png?ex=661184cb&is=65ff0fcb&hm=ac8f8809e8d1e27204610b8a0007b9fcdefa7321256ca9922f0a0c0c2f200f75&) repeat-x;
+  animation: move 10s linear infinite;
+  background-size: cover;
+}
+  
+.container3--fixed {
+  width: 100%;
+  max-width: 100%;
+}
+  
+@keyframes move {
+  to {
+    background-position: 428% 0;
+  }
+}
+  
+.centertext{
+  text-align: center;
+}
