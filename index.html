@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una's Paradise</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/TEST.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="Images/Lain3.png">
+</head>
+<body>
+    <div class="page d-none d-sm-block">
+        <div class="keyart" id="parallax">
+          <div class="keyart_layer" id="keyart-5"></div>
+          <div class="keyart_layer" id="keyart-4"></div>
+          <div class="keyart_layer" id="keyart-3"></div>
+          <div class="keyart_layer" id="keyart-2"></div>
+          <div class="keyart_layer" id="keyart-1"></div>
+          <div class="keyart_layer" id="keyart-0"></div>
+        </div>
+      <div class="overflow">
+        <div class="container-fluid d-none d-sm-block background1">
+            <div class="row container-fluid heightP">
+            <header class="heightH d-none d-sm-block">
+                    <div class="row fillheight">
+                        <div class="row TB1 fillheight" id="col1">
+                          ABOUTMEEEEE
+                        </div>
+                        <div class="row TB2 cardsH" id="col2">
+                            <div class="col-md-3"><br><div><img src="Images/DiscordUna.PNG" class="img-responsive cards mx-auto d-block hovercard clickable-img"></div>
+                            <br><div class="textlinks">DISCORD</div></div>
+                            <div class="col-md-3"><br><a target="_blank" href="https://open.spotify.com/user/gftgrghhbgh"><img src="Images/Spotify1.PNG" class="img-responsive cards mx-auto d-block hovercard alt"></a>
+                              <br><div class="textlinks">SPOTIFY</div></div>
+                            <div class="col-md-3"><br><a target="_blank" href="https://www.instagram.com/unalike.jvne/"><img src="Images/InstaUna.PNG" class="img-responsive cards mx-auto d-block hovercard"></a>
+                              <br><div class="textlinks">INSTAGRAM</div></div>
+                            <div class="col-md-3"><br><a target="_blank" href="https://twitter.com/BureauEvan"><img src="Images/TwitterUna.PNG" class="img-responsive cards mx-auto d-block hovercard alt"></a>
+                              <br><div class="textlinks">TWITTER / X</div></div>
+                        </div>
+                        
+                        <div class="row TB2 fillheight" id="col3">
+                          <div class="col-md-4 offset-1"><br><div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3k7OesaxLFcokhs7Gi7ykv?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div></div>
+                          <div class="col-md-2"><img src="Images/lain-dancing.gif" class="img-responsive laindancing mx-auto d-block"></div>
+                          <div class="col-md-4"><br><div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0trlphfdoc77A7A8RUBZmH?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div></div>
+                        </div>
+                        <div class="row TB1 fillheight discordbackground" id="col4">
+                          <div class="col-md-1"><br><iframe src="https://discord.com/widget?id=1216338156333563945&theme=dark" width="300" height="450" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+                        </div>
+                    </div>
+            </header>
+        <section class="d-none d-sm-block">
+            <div class="row container-fluid">
+                <div class="col-md-12 menubuttons">
+                    <button id="toggleButton1" class="aspace">ABOUT ME</button>
+                    <button id="toggleButton2" class="aspace">LINKS</button>
+                    <button id="toggleButton3" class="aspace">PLAYLISTS</button>
+                    <button id="toggleButton4">DISCORD</button>
+                </div>
+            </div>
+        </section>
+      </div>
+            </div>
+        </div>
+      </div>
+      
+        <script>
+            $(document).ready(function(){
+              $("#col2").hide();
+              $("#col3").hide();
+            });
+
+            $(document).ready(function(){
+              $("#toggleButton1").click(function(){
+                $("#col2").fadeOut();
+                $("#col3").fadeOut();
+                $("#col4").fadeOut();
+                $("#col1").fadeIn();
+              });
+            });
+
+            $(document).ready(function(){
+              $("#toggleButton2").click(function(){
+                $("#col1").fadeOut();
+                $("#col3").fadeOut();
+                $("#col4").fadeOut();
+                $("#col2").fadeIn();
+              });
+            });
+
+            $(document).ready(function(){
+              $("#toggleButton3").click(function(){
+                $("#col2").fadeOut();
+                $("#col1").fadeOut();
+                $("#col4").fadeOut();
+                $("#col3").fadeIn();
+              });
+            });
+
+            $(document).ready(function(){
+              $("#toggleButton4").click(function(){
+                $("#col2").fadeOut();
+                $("#col3").fadeOut();
+                $("#col1").fadeOut();
+                $("#col4").fadeIn();
+              });
+            });
+
+
+            $(document).ready(function(){
+              $(".clickable-img").click(function(){
+                copyToClipboard(".una.");
+              });
+
+              function copyToClipboard(text) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val(text).select();
+                document.execCommand("copy");
+                $temp.remove();
+                alert("Message copié : " + text);
+              }
+            });
+          </script>
+          
+          <div class="page d-block d-sm-none">
+            <div class="keyart" id="parallax">
+              <div class="keyart_layer" id="keyart-5"></div>
+              <div class="keyart_layer" id="keyart-4"></div>
+              <div class="keyart_layer" id="keyart-3"></div>
+              <div class="keyart_layer" id="keyart-2"></div>
+              <div class="keyart_layer" id="keyart-1"></div>
+              <div class="keyart_layer" id="keyart-0"></div>
+            </div>
+          <div class="overflow">
+            <div class="container-fluid d-block d-sm-none background1">
+                <div class="row container-fluid heightP">
+                <header class="heightH d-block d-sm-none">
+    
+    <div class="container-fluid d-block d-sm-none background2">
+        <header class="d-block d-sm-none">
+          <div class="row container-fluid">
+            <div class="col-md-12 menubuttons">
+                <button id="toggleButton1" class="bspace ButtonTel">ABOUT ME</button>
+                <button id="toggleButton2" class="ButtonTel">LINKS</button><br>
+                <button id="toggleButton3" class="bspace ButtonTel">PLAYLISTS</button>
+                <button id="toggleButton4" class="ButtonTel">DISCORD</button>
+            </div>
+        </div>
+        </header>
+        <section class="heightH d-block d-sm-none">
+          <div class="row">
+              <div class="row TB1 fillheight" id="col1">
+                ABOUTMEEEEE
+              </div>
+              <div class="row TB2 cardsH" id="col2">
+                  <div class="col-md-3"><br><div><img src="Images/DiscordUna.PNG" class="img-responsive cards mx-auto d-block hovercard clickable-img"></div>
+                  <br><div class="textlinks">DISCORD</div></div>
+                  <div class="col-md-3"><br><a target="_blank" href="https://open.spotify.com/user/gftgrghhbgh"><img src="Images/Spotify1.PNG" class="img-responsive cards mx-auto d-block hovercard alt"></a>
+                    <br><div class="textlinks">SPOTIFY</div></div>
+                  <div class="col-md-3"><br><a target="_blank" href="https://www.instagram.com/unalike.jvne/"><img src="Images/InstaUna.PNG" class="img-responsive cards mx-auto d-block hovercard"></a>
+                    <br><div class="textlinks">INSTAGRAM</div></div>
+                  <div class="col-md-3"><br><a target="_blank" href="https://twitter.com/BureauEvan"><img src="Images/TwitterUna.PNG" class="img-responsive cards mx-auto d-block hovercard alt"></a>
+                    <br><div class="textlinks">TWITTER / X</div></div>
+              </div>
+              
+              <div class="row TB2 fillheight" id="col3">
+                <div class="col-md-4 offset-1"><br><div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3k7OesaxLFcokhs7Gi7ykv?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div></div>
+                <div class="col-md-4 offset-2"><br><div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0trlphfdoc77A7A8RUBZmH?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div></div>
+              </div>
+              <div class="row TB1 fillheight" id="col4">
+                <div class="col-md-4 offset-5"><br><iframe src="https://discord.com/widget?id=1178350321412620349&theme=dark" width="fit-content" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+              </div>
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
