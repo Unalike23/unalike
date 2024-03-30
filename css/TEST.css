@@ -8,12 +8,17 @@
 
 body{
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     background-image: url(ImagesForCss/Layers0.PNG);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .heightH{
+  height: 70vh;
+}
+.heightZ{
   height: 200px;
 }
 
@@ -24,32 +29,10 @@ body{
   background-position: center top;
 }
 .background2{
-  background-image: url(ImagesForCss/Wallpaper1.JPG);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.heightSCROLL{
-  height: 1080px;
-  background-image: url(ImagesForCss/TransitEnGif.gif);
-  background-repeat: no-repeat;
+  background-image: url(ImagesForCss/Wallpaper3.PNG);
   background-size: cover;
-  background-position: center;
-}
-.heightSCROLL2{
-  height: 800px;
-  background-image: url(ImagesForCss/Transit2.JPG);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-}
-
-.fillheight{
-  height: fit-content;
-}
-
-.PFP{
-  padding: 10px;
 }
 
 .centering{
@@ -58,14 +41,6 @@ body{
 
 .menubuttons{
   text-align: center;
-}
-
-.noblur{
-  filter: blur(0);
-}
-
-.blur{
-  filter: blur(10);
 }
 
 .heightP{
@@ -79,12 +54,6 @@ body{
   background-size: cover;
 }
 
-.fadedark{
-    background-image: url(https://i.ibb.co/McfDdsH/dark-fade-1.png);
-    background-repeat: repeat-y;
-    height: 100vh;
-}
-
 .bspace{
   margin-right: 20px;
 }
@@ -92,25 +61,6 @@ body{
 .aspace{
   margin-right: 100px;
 }
-
-/*a {
-  box-shadow: inset 0 0 0 0 #ffffff;
-  color: #ffffff;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  font-size: 20px;
-  text-decoration-line: none;
-  font-family: 'DejaVu Sans Mono', monospace;
-  letter-spacing: 2px;
-  background-color: #000000;
-  border: none;
-  text-align: center;
-}
-a:hover {
-  box-shadow: inset 260px 0 0 0 #8b8b8b83;
-  color: rgb(255, 255, 255);
-}*/
 
 button {
     box-shadow: inset 0 0 0 0 #ffffff;
@@ -122,11 +72,11 @@ button {
     text-decoration-line: none;
     font-family: 'DejaVu Sans Mono', monospace;
     letter-spacing: 2px;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
 }
 button:hover {
-    box-shadow: inset 260px 0 0 0 #8b8b8b83;
+    box-shadow: inset 300px 0 0 0 #8b8b8b83;
     color: rgb(255, 255, 255);
 }
 .heightone{
@@ -164,9 +114,9 @@ button:hover {
 
 body {
   margin: 0;
-  font-family:Helvetica,Sans-serif;
   overflow-x:hidden;
 }
+
 .page {
   width:100vw;
   height:100vh;
@@ -174,12 +124,14 @@ body {
   perspective-origin: center center;
   overflow-x:hidden;
 }
+
 .overflow {
   position:absolute;
   width:100vw;
   height:80vh;
   top:100vh;
 }
+
 #parallax {
   transform-style: preserve-3d;
   height:100vh;
@@ -222,7 +174,42 @@ body {
   transform:translate3d(0,84px,.2px) scale(.9);
 }
 
+.keyart_layer2 {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
 
+#keyart-01 {
+  background-image: url('ImagesForCss/Layers0.PNG');
+  background-color: #000000;
+  transform:translate3d(-11px,-46px,-1.3px) scale(2.3);
+}
+#keyart-11 {
+  background-image: url('ImagesForCss/Layer3.png');
+  transform:translate3d(0,-47px,-.7px) scale(1.75);
+}
+#keyart-21 {
+  background-image: url('ImagesForCss/Layer1.png');
+  transform:translate3d(0,-98px,-.4px) scale(1.4);
+}
+#keyart-31 {
+  background-image: url('');
+  transform:translate3d(0,-2px,-.1px) scale(1.1);
+}
+#keyart-41 {
+  background-image: url('ImagesForCss/LayerBlack.png');
+  transform:translate3d(0,35px,.1px) scale(1.1);
+}
+#keyart-51 {
+  background-image: url('ImagesForCss/Layer2.png');
+  transform:translate3d(0,84px,.2px) scale(.9);
+}
 
 
 @keyframes fadeIn {
@@ -244,7 +231,6 @@ body {
 }
 
 
-
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
@@ -257,41 +243,15 @@ body {
   margin-top: 100px;
 }
 
-.carre {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
-  transition: width 0.5s, height 0.5s;
-  overflow: hidden;
-  position: absolute;
-}
-
-.carre:hover {
-  width: 600px;
-  height: 420px;
-}
-
-.carre2 {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
-  transition: width 0.5s, height 0.5s;
-  overflow: hidden;
-}
-
-.carre2:hover {
-  width: 600px;
-  height: 420px;
-  margin-right: -300px;
-  margin-bottom: -210px;
-}
-
-
 .cards{
   width: 300px;
   height: 380px;
+  background-size: cover;
+  border-radius: 5%;
+}
+.cards2{
+  width: 200px;
+  height: 210px;
   background-size: cover;
   border-radius: 5%;
 }
@@ -303,6 +263,7 @@ body {
 .TB2{
   position: absolute;
   background-color: black;
+  width: 100%;
 }
 
 .heightS{
@@ -323,6 +284,20 @@ body {
   border: none;
   text-align: center;
 }
+.textlinks2{
+  box-shadow: inset 0 0 0 0 #ffffff;
+  color: #ffffff;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-size: 13px;
+  text-decoration-line: none;
+  font-family: 'DejaVu Sans Mono', monospace;
+  letter-spacing: 2px;
+  background-color: #000000;
+  border: none;
+  text-align: center;
+}
 
 .TEST{
   border: 2px solid rgb(248, 0, 0);
@@ -333,28 +308,12 @@ body {
   background-color: #000;
 }
 
-/*.hovercard {
-  -webkit-mask-image: linear-gradient(45deg,#cacaca 25%,rgba(197, 197, 197, 0.2) 50%,#eeeeee 75%);
-  mask-image: linear-gradient(45deg,#f0f0f0 2rgba(255, 255, 255, 0.rgb(252, 252, 252)) 50%,#d6d6d6 75%);
-  -webkit-mask-size: 800%;
-  mask-size: 800%;
-  -webkit-mask-position: 0;
-  mask-position: 0;
-}
-
-.hovercard:hover {
-  transition: mask-position 2s ease,-webkit-mask-position 2s ease;
-  -webkit-mask-position: 120%;
-  mask-position: 120%;
-  opacity: 1;
-}*/
-
 .clickable-img {
   cursor: pointer;
 }
 
 .hovercard {
-  --a: 8deg; /* control the angle of rotation (the smaller, the better) */
+  --a: 8deg;
   aspect-ratio: 1;
   border-radius: 20px;
   transform: perspective(400px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
@@ -379,16 +338,61 @@ body {
 }
 
 .ButtonTel{
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .laindancing{
   margin-top: 100px;
 }
 
-.discordbackground{
-  background-image: url(ImagesForCss/Banner1.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
+.discards{
+  border-radius: 5%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.button-inside-image {
+  position: absolute;
+  bottom: 47%;
+  left: 87%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #ec6a6a;
+  color: white;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.phonecard{
+  width: 83vw;
+}
+
+.button-inside-image2 {
+  position: absolute;
+  bottom: 50%;
+  left: 125%;
+  padding: 10px 20px;
+  background-color: #ec6a6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.heightN{
+  height: 50px;
+  background-color: #00000000;
+}
+
+.unav{
+  height: 100%;
+}
+
+.rightnav{
+  margin-left: 90%;
 }
